@@ -28,7 +28,7 @@ public class UserTest {
                 .log().all()
                 .assertThat().statusCode(201)
                 .assertThat().body("message", equalTo("Cadastro realizado com sucesso"))
-                .assertThat().body("_id", not(equalTo(null)));;
+                .assertThat().body("_id", not(equalTo(null)));
     }
 
     @Test
